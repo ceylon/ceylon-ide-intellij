@@ -7,7 +7,7 @@ This project is an IntelliJ IDEA-based IDE for the [Ceylon programming language]
 
 # Requirements
 
-This plugin is developed against IntelliJ IDEA 2016.2, but is compatible with 2016.1+.
+This plugin is developed against IntelliJ IDEA 2016.2, but is compatible with 2016.1-2017.2.
 It works with both Community and Ultimate editions, and also supports Android Studio 2.x.
 
 The plugin includes a full embedded distribution of Ceylon, so you don't necessarily have to download 
@@ -25,14 +25,14 @@ You can install Ceylon IDE for IntelliJ from a repository, or build it from sour
 
 The following software must be installed:
 
-- [IntelliJ IDEA 2016.1+](http://www.jetbrains.com/idea/download/) Community or Ultimate
+- [IntelliJ IDEA 2016.1-2017.2](http://www.jetbrains.com/idea/download/) Community or Ultimate
 - [JDK 7 or 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 ## Install stable version from the JetBrains repository
 
 _This is the simplest way to install **stable versions** of Ceyon IDE for IntelliJ._
 
-Inside the IDE, go to `Preferences > Plugins > Browse repositories...` and type `Ceylon`, then install the plugin named `Ceylon IDE`.
+Inside the IDE, go to `File > Settings (on Mac, Preferences) > Plugins > Browse repositories...` and type `Ceylon`, then install the plugin named `Ceylon IDE`.
 
 ## Install from the Development plugin repository
 
@@ -73,7 +73,7 @@ have the ability to create Ceylon IntelliJ modules in which you can develop and 
 
         ant dist sdk intellij
 
-4. Inside IntelliJ, go to 'Preferences ... > Plugins' and click 'Install plugin from disk...',
+4. Inside IntelliJ, go to 'Settings ... > Plugins' and click 'Install plugin from disk...',
    select `../ceylon-ide-intellij/out/installation-packages/CeylonIDEA.zip`.
 
 5. Enjoy coding Ceylon in IntelliJ!
@@ -86,7 +86,7 @@ If you want to debug or hack this plugin, you'll need to build it from sources.
    A clone of `https://github.com/JetBrains/intellij-community` is highly recommended for hacking
    since you will likely have to debug code from the IntelliJ platform
 
-2. Go to 'Preferences ... > Plugins', and ensure that the following plugins are installed and
+2. Go to 'Settings ... > Plugins', and ensure that the following plugins are installed and
    enabled in your IDEA instance:
     - Plugin DevKit,
     - UI Designer,
@@ -118,10 +118,10 @@ If you want to debug or hack this plugin, you'll need to build it from sources.
 
 6. Open the project `ceylon-ide-intellij` in IDEA. When the IDE shows a tooltip indicating "Frameworks detected: Ceylon 
    framework is detected in the project", **do not** click on Configure, the project is already correctly configured. 
-   You might be requested to enter the value of two path variables. Go to 'Preferences ... > Appearance & Behavior > Path Variables',
+   You might be requested to enter the value of two path variables. Go to 'Settings ... > Appearance & Behavior > Path Variables',
    and add a variable named `CEYLON_DIST` pointing to `../ceylon/dist/dist`.
 
-7. In the IDE's 'Preferences ... > Editor > File Types', under 'Recognized File Types', register
+7. In the IDE's 'Settings ... > Editor > File Types', under 'Recognized File Types', register
    `*.car` as an extension under the 'Archive' file type.
 
 8. Go to 'File > Project Structure ... > SDKs':
